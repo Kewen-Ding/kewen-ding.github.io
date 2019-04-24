@@ -1,0 +1,229 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
+    xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="x-apple-disable-message-reformatting">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Email</title>
+</head>
+
+<body>
+    <style type="text/css">
+        body {
+            background: #CCC;
+        }
+
+        section {
+            background: #EEE;
+            width: 600px;
+            margin: 10px auto;
+            padding: 10px 0pz;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        section.today {
+            background: #4e98e1;
+            color: white;
+            text-align: center;
+        }
+
+        input {
+            display: none;
+            visibility: hidden;
+        }
+
+        label {
+            display: block;
+            padding: 0.5em;
+            text-align: center;
+            color: #666;
+        }
+
+        [id^=expand] {
+            height: 0px;
+            overflow: hidden;
+            transition: height 0.5s;
+            padding: 0 20px;
+            background-color: #1c1c1c;
+        }
+
+        [id^=toggle]:checked~[id^=expand] {
+            height: auto;
+        }
+
+        img.quote {
+            display: block;
+            width: 600px;
+            margin: 10px auto;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        img.today-icon {
+            color: #1c1c1c;
+        }
+
+        h2 {
+            margin: 0px 0px;
+        }
+
+        td[class="body_text"] {
+            font-family: arial, sans-serif;
+            font-size: 14px;
+            line-height: 20px !important;
+            color: white;
+            padding-top: 10px;
+        }
+
+        /* 2 Equal-Width Columns V2 Layout Pattern CSS */
+        @media only screen and (max-width: 600px) {
+            td[class="pattern"] table {
+                width: 100%;
+            }
+
+            section,
+            img.quote {
+                width: 95vw;
+            }
+
+        }
+
+     
+      
+        /* Fluid Video Media Pattern CSS */
+       @media only screen and (max-width: 599px) {
+           div[class="pattern"] video,
+           div[class="pattern"] img
+           {
+               width: 100%;
+               height: auto !important;
+           }
+       }
+    </style>
+
+    <img class="quote" src="https://www.brainyquote.com/photos_tr/en/r/raycharles/167077/raycharles1-2x.jpg"></img>
+
+    <section class="today">
+        <h3>二十四节气：谷雨 第五天</h3>
+        <h2>2019年4月24日</h2>
+        <h3>星期三 农历三月二十</h3>
+    </section>
+
+    <section>
+        <input id="toggle1" type="checkbox">
+        <h2><label for="toggle1">Weather</label></h2>
+
+        <div id="expand1">
+
+            <table cellpadding="0" cellspacing="0">
+                <tr>
+                    <td class="pattern" width="600" align="center">
+                        <table cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td class="col" width="290" valign="top">
+                                    <table cellpadding="0" cellspacing="0" style="margin: auto;">
+                                        <tr>
+                                            <td class="headline" align="center"
+                                                style="font-family: arial,sans-serif; font-size: 22px; color: white; padding-top: 15px;">
+                                                Ballarat
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="center">
+                                                <img class="today-icon" alt="Clearing shower" title="Clearing shower"
+                                                    src="https://www.abc.net.au/res/sites/news/images/common/icons/weather/80px_ffffff/clearing-shower.png">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body_text" align="center">
+                                                <b>Clearing shower</b>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body_text" align="left">
+                                                <b>Temperate: </b>10°C ~ 19°C
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body_text" align="left">
+                                                <b>Rain: </b>70% chance (< 1mm) </td> </tr> <tr>
+                                            <td class="body_text" align="left">
+                                                <b>UV: </b>4 Moderate
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body_text" align="left">
+                                                <b>Sunrise: </b>06:58 <b>Sunset: </b>17:47
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+
+                                <td class="spacer" width="20" style="font-size: 1px;">&nbsp;</td>
+
+                                <td class="col" width="290" valign="top">
+                                    <table cellpadding="0" cellspacing="0" style="margin: auto;">
+                                        <tr>
+                                            <td class="headline" align="center"
+                                                style="font-family: arial,sans-serif; font-size: 22px; color: white; padding-top: 15px;">
+                                                <b>西安</b>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="center">
+                                                <img class="today-icon" alt="Clearing shower" title="Clearing shower"
+                                                    src="https://www.abc.net.au/res/sites/news/images/common/icons/weather/80px_ffffff/sunny.png">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body_text" align="center">
+                                                <b>小雨</b>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body_text" align="left">
+                                                <b>气温: </b>10°C ~ 19°C
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body_text" align="left">
+                                                <b>湿度: </b>48%
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body_text" align="left">
+                                                <b>空气指数: </b>82 良
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body_text" align="left">
+                                                <b>日出: </b>06:04 <b>日落: </b>19:22
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="body_text" align="left">
+                                                <b>建议: </b>极少数敏感人群应减少户外活动
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+        
+        <div class="pattern">
+    <a href="https://abcmedia.akamaized.net/news/news24/wins/201904/WINs_1700_2304_512k.mp4"><img style="display: block;" border="0" src="https://www.abc.net.au/cm/rimage/8394058-16x9-large.png?v=2" width="600" height="337" label="Fallback Image" /></a>
+</div>
+
+    </section>
+</body>
+
+</html>
