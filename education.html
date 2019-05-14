@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Personal website, Education page" />
+    <meta name="description" content="Kewen Ding personal website" />
+    <meta name="author" content="Kewen Ding" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="images/favicon.ico" rel="icon" />
+    <title>Education</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/leaflet.css" />
+    <script type="text/javascript" src="js/leaflet.js"></script>
+</head>
+
+<body class="wrapper">
+
+    <header>
+        <nav class="navigation">
+            <a href="index.html"><img class="logo" src="images/Logo-1.png" /></a>
+            <ul class="right-nav">
+                <li>
+                    <a class="nav-link" href="index.html">
+                        <i class="fas fa-home "></i>
+                        <span class="nav-text">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link active" href="about.html">
+                        <i class="fas fa-question-circle"></i>
+                        <span class="nav-text">About</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="blog.html">
+                        <i class="fas fa-blog"></i>
+                        <span class="nav-text">Blog</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="gallery.html">
+                        <i class="fas fa-images"></i>
+                        <span class="nav-text">Gallery</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="contact.html">
+                        <i class="fas fa-paper-plane"></i>
+                        <span class="nav-text">Contact</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <aside>
+        <nav class="sidebar">
+            <a href="/about.html">About</a>
+            <a href="/project.html">Project</a>
+            <a href="/skill.html">Skill</a>
+            <a href="/education.html" class="active">Education</a>
+            <a href="/hobby.html">Hobby</a>
+        </nav>
+    </aside>
+
+    <main>
+        <h1 class="main-title">Education</h1>
+        <section>
+            <div class="card content-wrapper">
+                <img src="images/high-school.jpg" alt="high-school" />
+                <div class="container">
+                    <h2>Middle School Attached to Northwestern Polytechnical University</h2>
+                    <small>From 2012-09-01 To 2015-06-10</small>
+                    <p>It is located in the southern suburbs of Xi'an, and covers an area of over 34,000 square meters.
+                        The school's staff consists of 235 people, and hosts more than 4,000 students. Since 1995,
+                        Xigongda High School has rapidly developed. From 2000 to the present, 96% of its students have
+                        scored at or above the required score on their college entrance examination boards to get into
+                        leading universities.
+                        <a
+                            href="https://en.wikipedia.org/wiki/Middle_School_Attached_to_Northwestern_Polytechnical_University">Read
+                            more</a>
+                    </p>
+                </div>
+                <div id="map-1" class="map"></div>
+            </div>
+
+            <div class="card content-wrapper">
+                <img src="images/gallery-4.jpg" alt="University" />
+                <div class="container">
+                    <h2>Federation University Australia</h2>
+                    <small>From 2016-03-07 To Present</small>
+                    <p>Federation University Australia (FedUni) is a public, dual-sector university based in Ballarat in
+                        Victoria, Australia. The university also has campuses in Ararat, Horsham, Stawell, Churchill,
+                        and Berwick, as well as online technical and further education (TAFE) courses and Horsham's
+                        Higher Education Nursing program.</p>
+
+                    <p>FedUni is the fourth oldest tertiary education institution in Australia, having began under
+                        predecessor institutions in 1870, during the Victorian gold rush. With the merger between the
+                        University of Ballarat and Monash University's Gippsland campus in 2013, the university changed
+                        its name to Federation University from 2014
+                        <a href="https://en.wikipedia.org/wiki/Federation_University_Australia">Read more</a>
+                    </p>
+                </div>
+                <div id="map-2" class="map"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <a href="/index.html">Home</a>
+            <a href="/about.html">About</a>
+            <a href="/blog.html">Blog</a>
+            <a href="/gallery.html">Gallery</a>
+            <a href="/contact.html">Contact</a>
+        </nav>
+        <small>
+            &copy; 2019 Copyright <span>Design By Kewen Ding</span>
+        </small>
+    </footer>
+
+</body>
+<script type="text/javascript" src="js/main.js"></script>
+<script>
+    var map1 = L.map('map-1').setView([34.2435, 108.9143], 15);
+    var map2 = L.map('map-2').setView([-37.626441, 143.8910952], 15);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map1);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map2);
+
+    L.marker([34.2435, 108.9143]).addTo(map1)
+        .bindPopup('This is my high school :)');
+
+    L.marker([-37.626441, 143.8910952]).addTo(map2)
+        .bindPopup('This is my Uni :)');
+</script>
+
+</html>

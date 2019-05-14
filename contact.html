@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Personal website, Contact page" />
+    <meta name="description" content="Kewen Ding personal website" />
+    <meta name="author" content="Kewen Ding" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="images/favicon.ico" rel="icon" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/leaflet.css" />
+    <script type="text/javascript" src="js/leaflet.js"></script>
+</head>
+
+<body class="wrapper">
+
+    <header>
+        <nav class="navigation">
+            <a href="index.html"><img class="logo" src="images/Logo-1.png" /></a>
+            <ul class="right-nav">
+                <li>
+                    <a class="nav-link" href="index.html">
+                        <i class="fas fa-home "></i>
+                        <span class="nav-text">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="about.html">
+                        <i class="fas fa-question-circle"></i>
+                        <span class="nav-text">About</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="blog.html">
+                        <i class="fas fa-blog"></i>
+                        <span class="nav-text">Blog</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="gallery.html">
+                        <i class="fas fa-images"></i>
+                        <span class="nav-text">Gallery</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link active" href="contact.html">
+                        <i class="fas fa-paper-plane"></i>
+                        <span class="nav-text">Contact</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <aside>
+        <h1 class="text-center">Follow me on social media</h1>
+
+        <ul class="social-media">
+            <li><a href="mailto:kewending@outlook.com"><i class="fas fa-envelope"></i></a></li>
+            <li><a href="https://github.com/Kewen-Ding"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://twitter.com/Kewen_Ding"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://www.facebook.com/kewending"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/kewen-ding/"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+
+        <a class="twitter-timeline" href="https://twitter.com/Kewen_Ding?ref_src=twsrc%5Etfw">Tweets by Kewen_Ding</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+        <div id="map" class="map"></div>
+    </aside>
+
+    <main>
+        <h1 class="main-title">Contact me</h1>
+        <section>
+            <form>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">First Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fname" name="firstname" placeholder="Your first name.." required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname">Last Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="country">Country</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="country" name="country" placeholder="Your country..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="email" id="email" name="email" placeholder="Your email.." required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="message">Message</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="message" name="message" placeholder="Write something.." style="height:200px"
+                            required minlength=20></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <button type="submit" class="submitBtn" title="submit"><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <a href="/index.html">Home</a>
+            <a href="/about.html">About</a>
+            <a href="/blog.html">Blog</a>
+            <a href="/gallery.html">Gallery</a>
+            <a href="/contact.html">Contact</a>
+        </nav>
+        <small>
+            &copy; 2019 Copyright <span>Design By Kewen Ding</span>
+        </small>
+    </footer>
+
+</body>
+<script type="text/javascript" src="js/main.js"></script>
+<script>
+    var map = L.map('map').setView([-37.626441, 143.8910952], 15);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+
+    L.marker([-37.626441, 143.8910952]).addTo(map)
+        .bindPopup('Hello there :)');
+</script>
+
+</html>

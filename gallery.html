@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Personal website, Project page" />
+    <meta name="description" content="Kewen Ding personal website" />
+    <meta name="author" content="Kewen Ding" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="images/favicon.ico" rel="icon" />
+    <title>Project</title>
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body class="wrapper1">
+
+    <header>
+        <nav class="navigation">
+            <a href="index.html"><img class="logo" src="images/Logo-1.png" /></a>
+            <ul class="right-nav">
+                <li>
+                    <a class="nav-link" href="index.html">
+                        <i class="fas fa-home "></i>
+                        <span class="nav-text">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="about.html">
+                        <i class="fas fa-question-circle"></i>
+                        <span class="nav-text">About</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="blog.html">
+                        <i class="fas fa-blog"></i>
+                        <span class="nav-text">Blog</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link active" href="gallery.html">
+                        <i class="fas fa-images"></i>
+                        <span class="nav-text">Gallery</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="contact.html">
+                        <i class="fas fa-paper-plane"></i>
+                        <span class="nav-text">Contact</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="main-title">Gallery</h1>
+        <section class="myGrid">
+            <img class="card click" src="images/gallery-1.jpg" onclick="imageOnClick(this)" title="Pokémon ✔" />
+            <img class="card click" src="images/gallery-2.jpg" onclick="imageOnClick(this)" title="JavaScript 💯" />
+            <img class="card click" src="images/gallery-3.jpg" onclick="imageOnClick(this)" title="HTML 📃" />
+            <img class="card click" src="images/gallery-4.jpg" onclick="imageOnClick(this)" title="FedUni 😎" />
+            <img class="card click" src="images/gallery-5.jpg" onclick="imageOnClick(this)" title="My Hometown 😘" />
+            <img class="card click" src="images/gallery-6.jpg" onclick="imageOnClick(this)" title="My Hometown 😘" />
+            <img class="card click" src="images/gallery-7.jpg" onclick="imageOnClick(this)" title="Food 😍" />
+            <img class="card click" src="images/gallery-8.jpg" onclick="imageOnClick(this)" title="Food 😍" />
+            <img class="card click" src="images/gallery-9.jpg" onclick="imageOnClick(this)" title="Animation 🔥" />
+        </section>
+
+        <!-- The Modal -->
+        <div id="imageModal" class="modal">
+            <img id="largerImage" src="" />
+            <h1 id="modal-image-title"></h1>
+        </div>
+
+    </main>
+
+    <footer>
+        <nav>
+            <a href="/index.html">Home</a>
+            <a href="/about.html">About</a>
+            <a href="/blog.html">Blog</a>
+            <a href="/gallery.html">Gallery</a>
+            <a href="/contact.html">Contact</a>
+        </nav>
+        <small>
+            &copy; 2019 Copyright <span>Design By Kewen Ding</span>
+        </small>
+    </footer>
+
+</body>
+<script type="text/javascript" src="js/main.js"></script>
+
+</html>

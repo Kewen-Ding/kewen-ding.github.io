@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Personal website, Blog page" />
+    <meta name="description" content="Kewen Ding personal website" />
+    <meta name="author" content="Kewen Ding" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="images/favicon.ico" rel="icon" />
+    <title>My blog</title>
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body class="wrapper">
+
+    <header>
+        <a name="top"></a>
+        <nav class="navigation">
+            <a href="index.html"><img class="logo" src="images/Logo-1.png" /></a>
+            <ul class="right-nav">
+                <li>
+                    <a class="nav-link" href="index.html">
+                        <i class="fas fa-home "></i>
+                        <span class="nav-text">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="about.html">
+                        <i class="fas fa-question-circle"></i>
+                        <span class="nav-text">About</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link active" href="blog.html">
+                        <i class="fas fa-blog"></i>
+                        <span class="nav-text">Blog</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="gallery.html">
+                        <i class="fas fa-images"></i>
+                        <span class="nav-text">Gallery</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="contact.html">
+                        <i class="fas fa-paper-plane"></i>
+                        <span class="nav-text">Contact</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <ul class="breadcrumb">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/blog.html">Blog</a></li>
+            <li>Title</li>
+        </ul>
+    </header>
+
+    <aside>
+        <nav class="sidebar">
+            <a href="#" class="active">Blog Title</a>
+            <a href="#section-title1">Section Title 1</a>
+            <a href="#section-title2">Section Title 2</a>
+        </nav>
+    </aside>
+
+    <main>
+        <h1 class="main-title">Blog Title</h1>
+        <small class="main-date">Written by Kewen Ding on May 11, 2019</small>
+        <section>
+            <h1 class="section-title" id="section-title1">Section Title 1</h1>
+            <blockquote>
+                Put Something cool here
+            </blockquote>
+            <p>This is the main body text</p>
+        </section>
+        <section>
+            <h1 class="section-title" id="section-title2">Section Title 2</h1>
+            <p>This is the example of using GitHub as a syntax highlighter</p>
+            <script src="https://gist.github.com/Kewen-Ding/a98a2bfd55f216ae380c3c0b6291bf13.js"></script>
+        </section>
+
+        <hr>
+        <h1>Leave a comment here</h1>
+
+        <div id="disqus_thread"></div>
+    </main>
+
+    <footer>
+        <nav>
+            <a href="/index.html">Home</a>
+            <a href="/about.html">About</a>
+            <a href="/blog.html">Blog</a>
+            <a href="/gallery.html">Gallery</a>
+            <a href="/contact.html">Contact</a>
+        </nav>
+        <small>
+            &copy; 2019 Copyright <span>Design By Kewen Ding</span>
+        </small>
+    </footer>
+
+    <a id="topBtn" href="#top"><i class="fas fa-arrow-up"></i></a>
+
+</body>
+<script type="text/javascript" src="js/main.js"></script>
+<script>
+
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+    var disqus_config = function () {
+        //this.page.url = "PAGE_URL";  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = "testing"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+
+    (function () { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://kewending.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+        Disqus.</a></noscript>
+
+</html>
